@@ -1,4 +1,4 @@
-abstract class DesafioErrors {
+abstract class DesafioErrors implements Exception {
   final String message;
 
   DesafioErrors({required this.message});
