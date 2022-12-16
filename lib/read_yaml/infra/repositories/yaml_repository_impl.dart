@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import '../../domain/entities/test_entity.dart';
+import '../../domain/entities/student_entity.dart';
 import '../../domain/repositories/yaml_repository.dart';
 import '../../external/datasources/local_file/read_local_file_datasource_impl.dart';
 import '../adapters/test_adapter.dart';

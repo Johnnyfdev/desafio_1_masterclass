@@ -14,9 +14,9 @@ void main() {
   group('usecase ...', () {
     test('get Yaml', () async {
       final YamlRepository repository = YamlRepositoryImpl();
-      GetDataYamlUseCase getDataYaml = GetDataYamlUseCaseImpl();
+      final GetDataYamlUseCase getDataYamlUsecase = GetDataYamlUseCaseImpl();
 
-      var data = await getDataYaml();
+      var data = await getDataYamlUsecase();
       var entity = TestAdapter.mapToEntity(data);
 
       debugPrint(entity.toString());

@@ -1,6 +1,6 @@
 import 'package:yaml/yaml.dart';
 
-import '../../domain/entities/test_entity.dart';
+import '../../domain/entities/student_entity.dart';
 
 class TestAdapter {
   static Map yamlToMap(String yaml) {
@@ -8,7 +8,7 @@ class TestAdapter {
     return map;
   }
 
-  static TestEntity mapToEntity(Map map) => TestEntity(
+  static StudentEntity mapToEntity(Map map) => StudentEntity(
         map['name'] as String,
         map['class'] as String,
         map['age'] as int,
