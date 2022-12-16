@@ -5,7 +5,6 @@ import '../../domain/repositories/yaml_repository.dart';
 import '../datasources/local_file/read_local_file_datasource.dart';
 
 class YamlRepositoryImpl implements YamlRepository {
-  // FIXME: CHANGE TO DI
   final ReadLocalFileDatasource _datasource;
   final YamlDto _yamlDto;
 
