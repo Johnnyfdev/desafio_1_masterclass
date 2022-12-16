@@ -4,7 +4,6 @@ import 'package:desafio_1_masterclass/read_yaml/domain/usecases/read_data_yaml_u
 import 'package:desafio_1_masterclass/read_yaml/domain/usecases/read_data_yaml_usecase_impl.dart';
 import 'package:desafio_1_masterclass/read_yaml/external/datasources/local_file/read_local_file_datasource_impl.dart';
 import 'package:desafio_1_masterclass/read_yaml/infra/adapters/student_adapter.dart';
-
 import 'package:desafio_1_masterclass/read_yaml/infra/repositories/yaml_repository_impl.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
