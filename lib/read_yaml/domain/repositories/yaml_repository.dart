@@ -1,3 +1,5 @@
+import '../typedef/read_data_yaml_file_typedef.dart';
+
 abstract class YamlRepository {
-  Future<Map> read();
+  ReadDataYamlFileResult read();
 }

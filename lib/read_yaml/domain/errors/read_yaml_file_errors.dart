@@ -5,7 +5,8 @@ abstract class ReadYamlFileErrors extends DesafioErrors {
 }
 
 class UnknowReadYamlFileError extends ReadYamlFileErrors {
-  UnknowReadYamlFileError() : super('Unknow Read Yaml File Error');
+  UnknowReadYamlFileError(message)
+      : super('Unknow Read Yaml File Error $message');
 }
 
 // TODO: ADD ERRORS
