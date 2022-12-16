@@ -16,15 +16,15 @@ void main() {
   setUpAll(() {
     WidgetsFlutterBinding.ensureInitialized();
   });
+
   group('READ YAML DATA FILE', () {
     test('Must return a Map from reading YAML File', () async {
       final GetDataYamlUseCase getDataYamlUsecase =
           GetDataYamlUseCaseImpl(repository);
-      var data = await getDataYamlUsecase();
 
-      debugPrint(data.toString());
+      var result = await getDataYamlUsecase();
 
-      expect(data, isA<Map>());
+      expect(result.when((success) => success, (error) => null), isA<Map>());
     });
   });
 }
