@@ -1,4 +1,4 @@
-import 'package:desafio_1_masterclass/read_yaml/entity.dart';
+import 'package:desafio_1_masterclass/read_yaml/domain/entities/test_entity.dart';
 import 'package:yaml/yaml.dart';
 
 class Adapter {

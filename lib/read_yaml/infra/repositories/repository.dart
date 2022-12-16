@@ -1,11 +1,11 @@
 import 'dart:developer';
 
-import 'package:desafio_1_masterclass/read_yaml/entity.dart';
+import 'package:desafio_1_masterclass/read_yaml/domain/entities/test_entity.dart';
 
-import 'adapter.dart';
-import 'datasource.dart';
+import '../adapters/adapter.dart';
+import '../../datasource.dart';
 
-class Repository {
+class ReadYamlRepository {
   // FIXME: CHANGE TO DI
   final Datasource datasource = Datasource();
 
