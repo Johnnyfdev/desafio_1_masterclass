@@ -1,12 +1,13 @@
-import '../../infra/repositories/yaml_repository_impl.dart';
 import '../repositories/yaml_repository.dart';
 import 'read_data_yaml_usecase.dart';
 
 class GetDataYamlUseCaseImpl implements GetDataYamlUseCase {
   // FIXME: CHANGE TO DI
-  final YamlRepository repository = YamlRepositoryImpl();
+  final YamlRepository _repository;
+
+  GetDataYamlUseCaseImpl(this._repository);
   @override
   Future<Map> call() async {
-    return await repository.read();
+    return await _repository.read();
   }
 }

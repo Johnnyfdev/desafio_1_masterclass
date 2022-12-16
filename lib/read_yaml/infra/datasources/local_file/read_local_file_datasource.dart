@@ -1,3 +1,3 @@
-abstract class ReadLocalYamlFileDatasource {
+abstract class ReadLocalFileDatasource {
   Future<String> call();
 }
