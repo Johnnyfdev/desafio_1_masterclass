@@ -1,7 +1,8 @@
-import 'package:desafio_1_masterclass/read_yaml/domain/entities/test_entity.dart';
 import 'package:yaml/yaml.dart';
 
-class Adapter {
+import '../../domain/entities/test_entity.dart';
+
+class TestAdapter {
   static Map yamlToMap(String yaml) {
     var map = loadYaml(yaml) as Map;
     return map;

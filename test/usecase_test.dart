@@ -1,7 +1,7 @@
 import 'package:desafio_1_masterclass/read_yaml/domain/repositories/yaml_repository.dart';
 import 'package:desafio_1_masterclass/read_yaml/domain/usecases/get_data_yaml_usecase.dart';
 import 'package:desafio_1_masterclass/read_yaml/domain/usecases/read_data_yaml_usecase_impl.dart';
-import 'package:desafio_1_masterclass/read_yaml/infra/adapters/adapter.dart';
+import 'package:desafio_1_masterclass/read_yaml/infra/adapters/test_adapter.dart';
 
 import 'package:desafio_1_masterclass/read_yaml/infra/repositories/yaml_repository_impl.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ void main() {
       GetDataYamlUseCase getDataYaml = GetDataYamlUseCaseImpl();
 
       var data = await getDataYaml();
-      var entity = Adapter.mapToEntity(data);
+      var entity = TestAdapter.mapToEntity(data);
 
       debugPrint(entity.toString());
     });
