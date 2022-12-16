@@ -2,7 +2,7 @@ import 'package:yaml/yaml.dart';
 
 import '../../domain/entities/student_entity.dart';
 
-class TestAdapter {
+class StudentAdapter {
   static Map yamlToMap(String yaml) {
     var map = loadYaml(yaml) as Map;
     return map;
