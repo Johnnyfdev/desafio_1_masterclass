@@ -18,7 +18,7 @@ void main() {
   });
 
   group('READ YAML DATA FILE', () {
-    test('Must return a Map from reading YAML File', () async {
+    test('Should return a Map from reading YAML File', () async {
       final GetDataYamlUseCase getDataYamlUsecase =
           GetDataYamlUseCaseImpl(repository);
 
